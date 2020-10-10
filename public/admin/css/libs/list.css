@@ -1,0 +1,23 @@
+.content-loading {
+    visibility: hidden;
+}
+
+.loader {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn-create {
+    position: absolute;
+    right: 0px;
+    margin-top: -18px;
+}

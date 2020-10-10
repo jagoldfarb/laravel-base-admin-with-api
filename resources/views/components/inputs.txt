@@ -1,0 +1,88 @@
+- String input
+@include('components.input', [
+	'name' => 'first_name',
+	'label' => 'Nombre',
+	'edit' => $item->first_name,
+	'required' => true
+])
+
+- Number input
+@include('components.input', [
+	'name' => 'total',
+	'label' => 'Total',
+	'edit' => $item->total,
+	'type' => 'number',
+	'required' => true
+])
+
+- Email input
+@include('components.input', [
+	'name' => 'email',
+	'label' => 'E-Mail',
+	'edit' => $item->email,
+	'type' => 'email',
+	'required' => true
+])
+
+- Password input
+@include('components.input', [
+	'name' => 'password',
+	'label' => 'Contraseña:',
+	'edit' => $item->password,
+	'type' => 'password',
+	'required' => true
+])
+
+- File input
+@include('components.input', [
+	'name' => 'image',
+	'label' => 'Imagen',
+	'edit' => $item->image,
+	'type' => 'file',
+	'classes' => ['file-upload'],
+	'image' => true,
+	'required' => true
+])
+
+- Google places address input
+@include('components.input', [
+	'name' => 'address',
+	'label' => 'Dirección',
+	'classes' => ['autocomplete'],
+	'edit' => $item->address,
+	'required' => true
+])
+
+- Date input
+@include('components.input', [
+	'name' => 'date',
+	'label' => 'Fecha',
+	'edit' => $item->date,
+	'type' => 'date',
+	'required' => true
+])
+
+- Textarea
+@include('components.textarea', [
+	'name' => 'description',
+	'label' => 'Descripción',
+	'edit' => $item->description,
+	'required' => true
+])
+
+- Select
+@include('components.select', [
+	'name' => 'user_id',
+	'label' => 'Usuario:',
+	'array' => $users,
+	'field' => 'name',
+	'edit' => $item->user_id,
+	'required' => true
+])
+
+- Checkbox
+@include('components.checkbox', [
+	'name' => 'active',
+	'label' => 'Activo:',
+	'edit' => $item->active
+])
